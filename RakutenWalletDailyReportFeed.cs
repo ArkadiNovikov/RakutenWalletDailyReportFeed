@@ -15,6 +15,7 @@ using Microsoft.SyndicationFeed.Rss;
 using System.Globalization;
 using Microsoft.SyndicationFeed;
 using System.Linq;
+using System.Net;
 
 namespace RakutenWalletDailyReportFeed
 {
@@ -69,7 +70,7 @@ namespace RakutenWalletDailyReportFeed
             
 
             var result = new ContentResult();
-            result.StatusCode = 200;
+            result.StatusCode = (int?)HttpStatusCode.OK;
             result.ContentType = "application/xml";
             result.Content = sw.ToString();
 

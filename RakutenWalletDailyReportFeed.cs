@@ -71,7 +71,7 @@ namespace RakutenWalletDailyReportFeed
 
             var result = new ContentResult();
             result.StatusCode = (int?)HttpStatusCode.OK;
-            result.ContentType = "application/xml";
+            result.ContentType = Application.Xml;
             result.Content = sw.ToString();
 
             return result;

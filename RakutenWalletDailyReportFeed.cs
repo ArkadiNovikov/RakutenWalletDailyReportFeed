@@ -16,11 +16,11 @@ using System.Globalization;
 using Microsoft.SyndicationFeed;
 using System.Linq;
 
-namespace RakutenMatsudaFeed
+namespace RakutenWalletDailyReportFeed
 {
     public static class RakutenWalletDailyReportFeed
     {
-        [FunctionName("RakutenMatsudaFeed")]
+        [FunctionName("RakutenWalletDailyReportFeed")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
